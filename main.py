@@ -21,11 +21,11 @@ def startUpPrompt():
         print("Type 5: Hyperbolic Functions")
         print("Type 6: Statistic Functions")
         print("Type 7: Unit Conversions\n")
-        user_type = input("Please enter a type number:")
-        user_type = int(user_type)
+        user_type = int(input("Please enter a type number:"))
         
         if user_type < 1 or user_type > 7:
-            print("Invalid choice. Please try again.")
+            print("Invalid choice. Please try again.\n")
+            print("\n")
 
     return  user_type
 
