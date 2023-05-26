@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 
-import os
-import sys
-import argparse
+# REWORK THIS TO SEND BACK INFORMATION TO THE MAIN.PY FILE
+# REWORK THIS TO ALLOW VALUES TO TRANSFER FROM PROCESS TO PROCESS AND RESET VALUES
+
+import math
 
 def basicCompPrompt():
     user_comp = 0
@@ -31,7 +32,7 @@ def addition(firstNumber):
         additionSum += secondValue
         print("Your sum is: ", additionSum)
         
-        user_continue = input("Y or N\n")
+        user_continue = input("Would you like to continue? Y or N\n")
         if user_continue == "N":
             break;
 
@@ -42,7 +43,7 @@ def subtraction(firstNumber):
         subtractionDifference -= secondValue
         print("Your difference is: ", subtractionDifference)
         
-        user_continue = input("Y or N\n")
+        user_continue = input("Would you like to continue? Y or N\n")
         if user_continue == "N":
             break;
 
@@ -54,7 +55,50 @@ def multiplication(firstNumber):
         multiplicationProduct *= secondValue
         print("Your product is: ", multiplicationProduct)
         
-        user_continue = input("Y or N\n")
+        user_continue = input("Would you like to continue? Y or N\n")
+        if user_continue == "N":
+            break;
+
+def division(firstNumber):
+    divisionQuotient = firstNumber
+    while True:
+        secondValue = float(input("Please enter a second value:"))
+        typeOfDivision = int(input("What type of division would you like to perform? 1 for Standard, 2 for Modulus\n"))
+        match typeOfDivision:
+            case 1:
+                divisionQuotient /= secondValue
+            case 2:
+                divisionQuotient %= secondValue
+            case _:
+                print("Please try again and enter either a 1 or 2\n")
+        print("Your quotient is: ", divisionQuotient)
+
+        user_continue = input("Would you like to continue? Y or N\n")
+        if user_continue == "N":
+            break;
+
+def squareRoot(firstNumber):
+    squareRootOrig = firstNumber
+    while True:
+        squareRootNew = math.sqrt(squareRootOrig)
+        print("The Square Root of ", squareRootOrig, " is ", squareRootNew)
+
+        squareRootOrig = squareRootNew
+
+        user_continue = input("Would you like to continue? Y or N\n")
+        if user_continue == "N":
+            break;
+
+def exponentials(firstNumber):
+    baseNumber = firstNumber
+    while True:
+        exponentValue = float(input("Please enter a second value for the exponent"))
+        total = pow(baseNumber, exponentValue)
+        print(baseNumber, " to the power of ", exponentValue, " is ", total)
+
+        baseNumber = total
+
+        user_continue = input("Would you like to continue? Y or N\n")
         if user_continue == "N":
             break;
 
@@ -70,5 +114,11 @@ if __name__ == "__main__":
             subtraction(firstValue)
         case 3:
             multiplication(firstValue)
+        case 4:
+            division(firstValue)
+        case 5:
+            squareRoot(firstValue)
+        case 6:
+            exponentials(firstValue)
         
     
