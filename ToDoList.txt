@@ -11,17 +11,16 @@ Basic Math Functions
 Advanced Calculator Usage
 -------------------------
 1. Memory Storage
-2. Trigonometric Functions (sin, cos, tan, csc, sec, cot)
-3. Logarithmic Functions (log and ln)
-4. Factorials (!)
-5. Absolute Value (|x|)
-6. Permutations & Combinations (nPr and nCr)
-7. Hyperbolic Functions (sinh, cosh, tanh)
-8. Statistic Functions (mean, median, mode, standard deviation, variance, regression)
-9. Unit Conversion
+2. Trigonometric Functions (sin, cos, tan, csc, sec, cot) ✓
+3. Logarithmic Functions (log and ln) ✓
+4. Factorials (!) ✓
+5. Absolute Value (|x|) ✓
+6. Permutations & Combinations (nPr and nCr) ✓
+7. Hyperbolic Functions (sinh, cosh, tanh) ✓
+9. Unit Conversion ✓
 
 Program Requirements
 --------------------
-1. Receive User Input
+1. Receive User Input ✓
 2. Break Functionality into Sections (Basic Computation, Advanced Computation)
 
