@@ -10,7 +10,7 @@ Basic Math Functions
 
 Advanced Calculator Usage
 -------------------------
-1. Memory Storage
+1. Memory Storage [Currently doesn't transfer over from function type to function type]
 2. Trigonometric Functions (sin, cos, tan, csc, sec, cot) ✓
 3. Logarithmic Functions (log and ln) ✓
 4. Factorials (!) ✓
@@ -22,5 +22,5 @@ Advanced Calculator Usage
 Program Requirements
 --------------------
 1. Receive User Input ✓
-2. Break Functionality into Sections (Basic Computation, Advanced Computation)
+2. Break Functionality into Sections (Basic Computation, Advanced Computation) ✓
 
